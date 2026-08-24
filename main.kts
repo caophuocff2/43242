@@ -4104,8 +4104,8 @@ println("================================================")
 val props = loadConfig()
 var webServerUrl = props.getProperty("web_server_url", "")
 if (webServerUrl.isBlank()) {
-    webServerUrl = prompt("Nhap Web Server URL (VD: http://192.168.2.42:3000)").trim()
-    if (webServerUrl.isBlank()) webServerUrl = "http://192.168.2.42:3000"
+    webServerUrl = prompt("Nhap Web Server URL (VD: http://147.135.213.131:20376)").trim()
+    if (webServerUrl.isBlank()) webServerUrl = "http://147.135.213.131:20376"
     props.setProperty("web_server_url", webServerUrl)
     saveConfig(props)
 }
